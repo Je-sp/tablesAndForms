@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form</title>
+</head>
+<body>
+    <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><label for="name">Name:</label></td>
+            <td><input type="text" id="name" placeholder="Type your name here"></td>
+          </tr>
+          <tr>
+            <td>Sex:</td>
+            <td>
+              <input type="radio" name="sex" id="male"> <label for="male">Male</label><br>
+              <input type="radio" name="sex" id="female"> <label for="female">Female</label><br>
+              <input type="radio" name="sex" id="other"> <label for="other">Other</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="eyeColor">Eye Color</label></td>
+            <td>
+              <select id="eyeColor">
+                <option>black</option>
+                <option>brown</option>
+                <option>blue</option>
+                <option>green</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Check all that apply</td>
+            <td>
+              <input type="checkbox" id="tall"> <label for="tall">Over 6ft. Tall</label><br>
+              <input type="checkbox" id="over200"> <label for="over200">Over 200 pounds</label><br>
+              <input type="checkbox" id="under200"> <label for="under200">Less than 200 pounds</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="athletic">Describe your athletic ability</label></td>
+            <td><textarea id="athletic" rows="4" cols="30"></textarea></td>
+          </tr>
+          <tr>
+            <td colspan="2" class="submit-row">
+              <button type="submit">Enter my Information</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</body>
+</html>
